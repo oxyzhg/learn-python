@@ -8,7 +8,7 @@ from multiprocessing import Pool
 client = MongoClient() #init mongodb server
 score_data_coll = client.jwch.sdut_score_data #jwch sdut_score_data collection
 
-url = 'http://210.44.176.116/cjcx/zcjcx_list.php'
+url = '成绩抓取链接'
 headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'}
 
 #爬取网页函数
@@ -42,7 +42,7 @@ def get_info(table, trs, payload):
 
 #主函数启动入口
 if __name__ == '__main__':
-    payloads = [{'post_xuehao':'1511030212{}'.format(str(i))} for i in range(0,2)]
+    payloads = [{'post_xuehao':'15110302{}'.format(str(i))} for i in range(120,130)]
 
     print('开始爬取数据')
     start_at = time.time()

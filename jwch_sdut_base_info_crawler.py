@@ -8,7 +8,7 @@ from multiprocessing import Pool
 client = MongoClient() #init mongodb server
 base_info_coll = client.jwch.sdut_base_info #jwch sdut_base_info collection
 
-url = 'http://210.44.176.116/cjcx/xhcx_list.php'
+url = '学号抓取链接'
 headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'}
 
 #爬取网页函数

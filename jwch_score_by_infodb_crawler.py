@@ -9,7 +9,7 @@ client = MongoClient() #init mongodb server
 base_info_coll = client.jwch.sdut_base_info #jwch sdut_base_info collection
 score_data_coll = client.jwch.sdut_score_data #jwch sdut_score_data collection
 
-url = 'http://210.44.176.116/cjcx/zcjcx_list.php'
+url = '成绩抓取链接'
 headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'}
 
 #根据学号获取网页信息
